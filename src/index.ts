@@ -1,4 +1,4 @@
-/*let ingresoproductonuevos1: string = String(
+let ingresoproductonuevos1: string = String(
   prompt("ingreso de  producto nuevo 1")
 );
 let stockinicialdelosproductosnuevos1: number = Number(
@@ -72,16 +72,16 @@ console.log(
   `Los productos disponibles son ${productonuevo3}$  ${precioproductonuevo3} hay en stock ${stocknuevoproducto3}`
 );
 
-let compra:number=number(
+let compra:number=Number(
   prompt("Ingrese la cantidad de productos que va a comprar")
 );
 
 while (compra <= 0) {
-  compra:number =Number(prompt(
+  compra=Number(prompt(
     "Ingrese la cantidad de productos que va a comprar que sea mayor a 0"
   ));
 }
-for (let index = 0; index < compra.length; index++) {
+for (let index = 0; index < compra; index++) {
   let compradeunproducto: string = String(prompt("Que producto desea comprar"));
 let cantidadacomprar: number = Number(prompt("Cuantos desea comprar"));
 
